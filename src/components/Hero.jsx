@@ -3,17 +3,17 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <section id="home" className="h-screen bg-pink-500 flex flex-col items-center justify-center text-white scroll-mt-10">
+    <section id="home" className="h-screen bg-pink-200 flex flex-col items-center justify-center text-white scroll-mt-10">
       <motion.h1
-        className="text-6xl font-bold mb-4"
+        className="font-bitcount text-6xl font-bold mb-4"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        SingerName
+        okayceci
       </motion.h1>
       <motion.p
-        className="text-xl mb-6"
+        className="font-barlow text-xl mb-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
