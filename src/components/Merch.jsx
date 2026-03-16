@@ -8,7 +8,7 @@ export default function Merch() {
   ]
 
   return (
-    <section id="merch" className="min-h-screen bg-gray-100 text-black p-10 scroll-mt-20 flex flex-col items-center">
+    <section id="merch" className="min-h-screen bg-gray-100 text-black p-10 scroll-mt-10 flex flex-col items-center">
       <h2 className="text-4xl font-bold mb-8">Merch</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {products.map((item) => (
