@@ -10,15 +10,15 @@ export default function Navbar() {
       <div className="mx-auto flex justify-between items-center p-5">
         {/* Site Title */}
         <h1 className="font-bitcount text-xl leading-none">
-          okayceci
+          <a href="#home" className="hover:text-pink-300">okayceci</a>
         </h1>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex font-barlow gap-6 text-sm sm:text-base">
-          <li><a href="#home" className="hover:text-pink-200">Home</a></li>
-          <li><a href="#about" className="hover:text-pink-200">About Me</a></li>
-          <li><a href="#merch" className="hover:text-pink-200">Merch</a></li>
-          <li><a href="#art" className="hover:text-pink-200">Art</a></li>
+          <li><a href="#home" className="hover:text-pink-300">Home</a></li>
+          <li><a href="#music" className="hover:text-pink-300">Music</a></li>
+          <li><a href="#merch" className="hover:text-pink-300">Merch</a></li>
+          <li><a href="#art" className="hover:text-pink-300">Art</a></li>
         </ul>
 
         {/* Mobile Hamburger */}
@@ -35,7 +35,7 @@ export default function Navbar() {
       {isOpen && (
         <ul className="md:hidden bg-black font-barlow flex flex-col items-center gap-4 p-4 text-base">
           <li><a href="#home" className="hover:text-pink-200" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="#about" className="hover:text-pink-200" onClick={() => setIsOpen(false)}>About Me</a></li>
+          <li><a href="#music" className="hover:text-pink-200" onClick={() => setIsOpen(false)}>Music</a></li>
           <li><a href="#merch" className="hover:text-pink-200" onClick={() => setIsOpen(false)}>Merch</a></li>
           <li><a href="#art" className="hover:text-pink-200" onClick={() => setIsOpen(false)}>Art</a></li>
         </ul>

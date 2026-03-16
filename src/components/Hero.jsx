@@ -18,10 +18,10 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        New album out now!
+        New album coming soon
       </motion.p>
       <motion.button
-        className="bg-white text-green-500 px-6 py-3 rounded-lg font-bold hover:bg-gray-100"
+        className="bg-white text-pink-300 px-6 py-3 rounded-lg font-bold hover:bg-gray-50 hover:text-pink-400"
         whileHover={{ scale: 1.05 }}
       >
         Listen Now
