@@ -103,7 +103,7 @@ const [selectedSong, setSelectedSong] = useState(null);
 
   return (
     <section id="music" className="min-h-screen scroll-mt-10 bg-black text-white font-barlow p-10">
-      <h2 className="text-4xl font-bold mb-10 text-center">Music</h2>
+      <h2 className="text-4xl font-bitcount font-bold mb-10 text-center">Music</h2>
       <div className = "flex justify-center items-center" >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {songs.map((song) => (
