@@ -8,8 +8,8 @@ export default function Art() {
   ]
 
   return (
-    <section id="art" className="min-h-screen bg-purple-500 text-white p-10 scroll-mt-10 flex flex-col items-center">
-      <h2 className="text-4xl font-bold mb-8">Art</h2>
+    <section id="art" className="min-h-screen bg-pink-200 text-white p-10 scroll-mt-10 flex flex-col items-center">
+      <h2 className="text-4xl font-bold mb-10">Art</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {pieces.map((piece) => (
           <div key={piece.name} className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
