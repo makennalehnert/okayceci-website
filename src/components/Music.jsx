@@ -106,30 +106,32 @@ const [selectedSong, setSelectedSong] = useState(null);
       <h2 className="text-4xl font-bitcount font-bold mb-10 text-center">Music</h2>
       <div className = "flex justify-center items-center" >
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {songs.map((song,index) => (
-          <motion.div
-            key={song.title}
-            className={`relative group cursor-pointer overflow-hidden rounded-lg 
-              ${songs.length % 2 === 1 && index === songs.length - 1 ? "col-span-2 flex justify-center" : ""}
-            `}
-            whileHover={{ scale: 1.05 }}
-            onClick={() => setSelectedSong(song)}
-           >
-            <div>
-              <img
-                src={song.cover}
-                alt={song.title}
-                className="w-full h-40 sm:h-56 md:h-64 object-cover"
-              />
-            </div>
-            
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="text-white font-bold text-sm sm:text-lg text-center px-2">
-            Listen to {song.title}
-            </span>
-          </div>
-          </motion.div>
-        ))}
+        {songs.map((song, index) => (
+  <motion.div
+    key={song.title}
+    className={`relative group cursor-pointer overflow-hidden rounded-lg 
+      ${songs.length % 2 === 1 && index === songs.length - 1 
+        ? "col-span-2 md:col-span-1 flex justify-center md:block" 
+        : ""}
+    `}
+    whileHover={{ scale: 1.05 }}
+    onClick={() => setSelectedSong(song)}
+  >
+    <div className="w-full max-w-[180px] sm:max-w-xs md:max-w-none transition-all">
+      <img
+        src={song.cover}
+        alt={song.title}
+        className="w-full h-40 sm:h-56 md:h-64 object-cover rounded-lg"
+      />
+    </div>
+
+    <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <span className="text-white font-bold text-sm sm:text-lg text-center px-2">
+        Listen to {song.title}
+      </span>
+    </div>
+  </motion.div>
+))}
       </div>
 
       {/* Modal */}
