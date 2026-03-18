@@ -144,33 +144,38 @@ const [selectedSong, setSelectedSong] = useState(null);
       )}
       </div>
       <p className="text-center pt-10">Listen to More okayceci</p>
-      <div className="mt-5 flex flex-wrap justify-center gap-4">
-        <a 
+      <div 
+      className="mt-5 flex flex-wrap justify-center gap-4"
+      >
+        <motion.a 
         href="https://open.spotify.com/artist/1NCMfKfYXbyLqsChnYNd3P?si=I7KomRSESHG16OHaE7bbzw"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-[#1DB954] text-white px-5 py-3 rounded-full">
+        className="inline-flex items-center gap-2 bg-[#1DB954] text-white px-5 py-3 rounded-full"
+        whileHover={{ scale: 1.05 }}>
         <SiSpotify />
           Spotify
-        </a>
+        </motion.a>
 
-        <a 
+        <motion.a 
         href="https://music.apple.com/us/artist/okayceci/1481077454"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-black text-white px-5 py-3 rounded-full border border-white">
+        className="inline-flex items-center gap-2 bg-black text-white px-5 py-3 rounded-full border border-white"
+        whileHover={{ scale: 1.05 }}>
         <SiApplemusic />
           Apple Music
-        </a>
+        </motion.a>
 
-        <a 
+        <motion.a 
         href="https://music.youtube.com/channel/UC40mUODD7F5XWTN87OPjFpA?si=2bn1i-bvYrb9a7tQ"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-3 rounded-full">
+        className="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-3 rounded-full"
+        whileHover={{ scale: 1.05 }}>
         <SiYoutubemusic />
           YouTube Music
-        </a>
+        </motion.a>
       </div>
     </section>
   );
