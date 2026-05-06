@@ -1,11 +1,10 @@
 # Singer Portfolio Website
 
-![Vercel](https://img.shields.io/badge/deployed-Vercel-blue)
-![Tech Stack](https://img.shields.io/badge/Tech-React%2C%20Vite%2C%20Tailwind-green)
-
 A responsive portfolio website for a singer, built with React, Vite, and Tailwind CSS.  
 The site features smooth animations, modern UI components, and a mobile-first design.
 
+![Vercel](https://img.shields.io/badge/deployed-Vercel-blue)
+![Tech Stack](https://img.shields.io/badge/Tech-React%2C%20Vite%2C%20Tailwind-green)
 ---
 
 ## Live Demo
